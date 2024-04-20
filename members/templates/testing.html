@@ -1,0 +1,12 @@
+{% extends 'master.html' %}
+{% block title %}Testing Page{% endblock %}
+{% block content %}
+{% if is_list %}
+    {% for x in testingobject %}
+    <p>{{ x }}</p>
+    {% endfor %}
+{% else %}
+    <p>{{ testingobject }}</p>
+{% endif %}
+
+{% endblock %}
